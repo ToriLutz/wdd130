@@ -1,20 +1,27 @@
+:root {
+    --border: 1px dotted black;
+    --font:"Montserrat", Helvetica, sans-serrif;
+    --padding: 1rem;
+    --background-color: rgb(0, 44, 40);
+}
 nav {
-    background-color: rgb(0, 44, 40);
-    padding: 10px;
+    background-color: var(--background-color);
+    padding: var(--padding);
 }
 nav a {
   color: ivory;
   display: block;
-  padding: 20px;
+  padding: var(--padding);
 }
 h1 {
-    color: rgb(0, 44, 40);
+    color: var(--background-color);
+    font: var(--font);
 }
 main img {
     width: 150px;
     height: auto;
-    border: 1px black;
-    padding: 2px;
+    border: var(--border);
+    padding: var(--padding);
     box-shadow: 0 0 30px gray;
 }
 p {
@@ -26,9 +33,9 @@ main
 aside {
     width: 20rem;
     margin: 1rem;
-    border: dotted #eee);
-    padding: 10px;
-    background-color: rgb(0, 44, 40);
+    border: var(--border);
+    padding: var(--padding);
+    background-color: var(--background-color);
     color: #eee;
     text-align: center;
 }
@@ -38,6 +45,6 @@ height: auto;
 }
 footer{
     margin-top: 15px;
-border-top: 1px solid #000 ;
+border-top: var(--border) ;
 text-align: center;
 }
