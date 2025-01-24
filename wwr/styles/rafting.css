@@ -1,0 +1,30 @@
+:root {
+    --primary-color: #4B5B63;
+    --secondary-color: #4C8FA6;
+    --accent-color-1: #D59D85;
+    --accent-color-2: #C4DCDD;
+
+}
+
+
+  @font-face  {
+    font-family: "Nunito", serif;
+    src: url(https://fonts.google.com/specimen/Nunito);
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    }
+  
+
+@font-face {
+    font-family:"Playwrite IN", serif;
+    src: url(https://fonts.google.com/specimen/Playwrite+IN);
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+} 
+
+h1{
+   font: bold;
+
+}
