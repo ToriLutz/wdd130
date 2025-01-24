@@ -5,26 +5,41 @@
     --accent-color-2: #C4DCDD;
 
 }
-
-
-  @font-face  {
-    font-family: "Nunito", serif;
-    src: url(https://fonts.google.com/specimen/Nunito);
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-    }
+.head-font{
+  font-family: "Playwrite IN", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font:bold;
+  color: var(--secondary-color);
   
-
-@font-face {
-    font-family:"Playwrite IN", serif;
-    src: url(https://fonts.google.com/specimen/Playwrite+IN);
+}
+p {
+    font-family: "Nunito", serif;
     font-optical-sizing: auto;
-    font-weight: 100;
+    font-weight: 400;
     font-style: normal;
-} 
+    color: var(--primary-color);
+}
 
-h1{
-   font: bold;
+a{
+    text-decoration: none;
+}
 
+.hero-img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.article {
+  position: absolute;
+  
+}
+.article-img {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 70px;
+  height: auto;
 }
