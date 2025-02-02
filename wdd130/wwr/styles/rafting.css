@@ -1,0 +1,152 @@
+:root {
+    --primary-color: #4B5B63;
+    --secondary-color: hsl(195, 37%, 47%);
+    --accent-color-1: hsl(18, 80%, 82%);
+    --accent-color-2: hsl(182, 27%, 82%, 80%);
+
+}
+header {
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: 120px 1fr 1fr;
+	align-items: end;
+  background-color: var(--accent-color-1);
+  justify-items: center;
+}
+.icon-img {
+  float: left;
+	margin: auto 5px;
+	width: 64px;
+	height: auto;
+}
+h1 {
+  font-size: 2rem;
+}
+.navigation {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+	color: var(--accent-color-2)
+}
+
+.navigation li {
+	flex: 1 1 auto;
+}
+
+.navigation a {
+  display: block;
+  color: var(--primary-color);
+  padding: 20px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.navigation a:hover {
+  color: var(--secondary-color);
+  font-weight: 700;
+  text-decoration: wavy;
+}
+
+.head-font{
+  font-family: "Playwrite IN", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font:bold;
+  color: var(--secondary-color);
+  
+}
+
+.body-font {
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--primary-color);
+}
+
+.about-us{
+    text-align: center;
+    top: 0;
+    background-color: var(--accent-color-2, );
+    padding: 10px;
+  
+    margin: 1rem auto;
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+  
+    
+
+}
+.history {
+  display: grid;
+  width: auto;
+  padding: 10px;
+  justify-content: space-around;
+  
+  grid-template-rows: repeat(1, 1fr);
+  text-align: center;
+  border: 2px solid var(--primary-color);
+}
+.history-words {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.hero{
+    position: relative;
+    
+    top: 0;
+    left: 0;
+}
+.hero-img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.article {
+  position: absolute;
+  top: 500px;
+  background-color:var(--accent-color-2);
+  margin: 20px;
+  padding: 10px;
+  margin-right: 500px;
+  color: var(--primary-color);
+  font-size: xx-large;
+  text-align: center;
+ 
+  
+}
+.article-img {
+  position: absolute;
+  top: 425px;
+  right: 50px;
+  width: 400px;
+  height: auto;
+  background-color: var(--accent-color-1);
+  border: 10px solid var(--accent-color-1);
+}
+
+.adventure {
+  display: grid;
+  width: auto;
+  padding: 10px;
+  justify-content: space-around;
+  background-color: var(--accent-color-2);
+  grid-template-rows: repeat(1, 1fr);
+  text-align: center;
+  border: 2px solid var(--primary-color);
+
+}
+footer {
+  margin: 1rem auto;
+  display: grid;
+  background-color: var(--accent-color-1);
+  justify-items: flex-end;
+}
+a{
+    text-decoration: none;
+}
