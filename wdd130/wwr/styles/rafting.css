@@ -5,29 +5,36 @@
     --accent-color-2: hsl(182, 27%, 82%, 80%);
 
 }
+
 header {
   margin: 1rem auto;
   display: grid;
-  grid-template-columns: 120px 1fr 1fr;
+  grid-template-columns: 1fr auto;
 	align-items: end;
   background-color: var(--accent-color-1);
-  justify-items: center;
 }
+
 .icon-img {
   float: left;
 	margin: auto 5px;
 	width: 64px;
 	height: auto;
 }
+
 h1 {
   font-size: 2rem;
 }
+
 .navigation {
 	display: flex;
 	flex-wrap: wrap;
 	list-style: none;
 	padding: 0;
 	color: var(--accent-color-2)
+}
+
+nav ul {
+  margin: 0 10px 0 0;
 }
 
 .navigation li {
@@ -41,6 +48,7 @@ h1 {
   text-decoration: none;
   font-size: 1.2rem;
 }
+
 .navigation a:hover {
   color: var(--secondary-color);
   font-weight: 700;
@@ -52,7 +60,6 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  font:bold;
   color: var(--secondary-color);
   
 }
@@ -65,30 +72,16 @@ h1 {
     color: var(--primary-color);
 }
 
-.about-us{
-    text-align: center;
-    top: 0;
-    background-color: var(--accent-color-2, );
-    padding: 10px;
-  
-    margin: 1rem auto;
-    display: grid;
-    grid-template-rows: auto;
-    align-items: center;
-  
-    
-
-}
 .history {
   display: grid;
   width: auto;
   padding: 10px;
   justify-content: space-around;
-  
   grid-template-rows: repeat(1, 1fr);
   text-align: center;
   border: 2px solid var(--primary-color);
 }
+
 .history-words {
   display: flex;
   align-items: center;
@@ -97,19 +90,28 @@ h1 {
 
 .hero{
     position: relative;
-    
     top: 0;
     left: 0;
 }
+
 .hero-img {
     position: relative;
     display: block;
     width: 100%;
     height: auto;
 }
-.article {
+
+.comp-name {
   position: absolute;
-  top: 500px;
+  top: 100px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+article {
+  position: absolute;
+  top: 200px;
   background-color:var(--accent-color-2);
   margin: 20px;
   padding: 10px;
@@ -117,13 +119,15 @@ h1 {
   color: var(--primary-color);
   font-size: xx-large;
   text-align: center;
- 
-  
 }
+
+.about-us{
+    margin: 1rem auto;
+    
+}
+
 .article-img {
-  position: absolute;
-  top: 425px;
-  right: 50px;
+  float: right;
   width: 400px;
   height: auto;
   background-color: var(--accent-color-1);
@@ -147,6 +151,24 @@ footer {
   background-color: var(--accent-color-1);
   justify-items: flex-end;
 }
-a{
-    text-decoration: none;
+
+footer p {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.adventure-pics {
+  display: flex;
+  justify-content: space-between;
+}
+
+.adventure-pics figure {
+  margin: auto 0;
+  width: 15%;
+  height: auto;
+}
+
+.adventure-pics figure img {
+  width: 100%;
+  height: auto;
 }
