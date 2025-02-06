@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    margin: 0 auto;
+    width: 650px;
+}
+
+h1{
+    margin: 1rem;
+    font-size: larger;
+    text-align: center;
+    color: #4B5B63;
+}
+
+label, input, button, select, textarea{
+    font-family: "Playwrite IN", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #4B5B63;
+  }
+  
+  body {
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #4B5B63;
+  }
+
+  form{
+    width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: solid 1px black;
+    background-color:  hsl(18, 80%, 82%);
+    display: grid;
+  }
+
+  fieldset{
+    display: grid;
+    grid-gap: 0;
+    margin: 0;
+    padding: 0;
+    color: #4B5B63;
+  }
+  legend{
+    padding: 1rem;
+    color: #4B5B63;
+  }
+  
+  label{
+    text-align: right;
+    padding-right: 10px;
+  }
+
+  input, select, textarea{
+    padding: .5rem;
+    font-size: 1.1rem;
+  }
+
+  input[type="checkbox"]{
+    vertical-align:middle;
+    width: 22px;
+    height: 22px;
+  }
+
+  button{
+    margin: .5rem;
+    background-color: hsl(182, 27%, 82%, 80%);
+    border: solid #4B5B63;
+    border-radius: 1rem;
+    font: 1.1rem;
+  }
+  button:hover{
+    background-color: hsl(195, 37%, 47%);
+    color: hsl(18, 80%, 82%);
+  }
+
+  footer{
+    text-align: center;
+    font-size: smaller;
+    margin: 1rem;
+    padding: 1rem;
+  }
