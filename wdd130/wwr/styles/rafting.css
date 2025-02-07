@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #4B5B63;
-    --secondary-color: hsl(195, 37%, 47%);
+    --primary-color: #192328;
+    --secondary-color: hsl(195, 37%, 35%);
     --accent-color-1: hsl(18, 80%, 82%);
-    --accent-color-2: hsl(182, 27%, 82%, 80%);
+    --accent-color-2: hsla(180, 100%, 90%, 0.813);
 
 }
 
@@ -40,6 +40,11 @@ header {
 
 h1 {
   font-size: 2rem;
+}
+
+h2{
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 .navigation {
@@ -172,3 +177,39 @@ footer p {
   width: 100%;
   height: auto;
 }
+
+.headshots img{
+  border: 1px solid var(--primary-color);
+  border-radius: 40%;
+  width: 200px;
+  height: auto;
+
+}
+.headshots{
+  justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+#map{
+  position: relative;
+  padding-bottom: 40%;
+  margin: 15rem;
+  border: #4B5B63 solid 1px;
+  overflow: hidden;
+}
+
+#map iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;}
+
+  .map{
+    background-color: var(--accent-color-2);
+    text-align: left;
+    display: grid;
+   
+  }
