@@ -19,6 +19,7 @@
 
 <body>
     <header>
+        <!-- remove the ../wwr/ for ./ -->
         <img class="icon-img" src="../wwr/images/icon-no-bg.png"
             alt="A logo with a painted oar in water with the words Dry Oar">
 
