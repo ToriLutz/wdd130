@@ -1,18 +1,18 @@
 :root {
-    --primary-color: #192328;
-    --secondary-color: hsl(195, 37%, 35%);
-    --accent-color-1: hsl(18, 80%, 82%);
-    --accent-color-2: hsla(180, 100%, 90%, 0.813);
+  --primary-color: #192328;
+  --secondary-color: hsl(195, 70%, 30%);
+  --accent-color-1: hsl(18, 80%, 82%);
+  --accent-color-2: hsla(180, 22%, 85%, 0.813);
 
 }
 
-.head-font{
+.head-font {
   font-family: "Playwrite IN", serif;
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
   color: var(--secondary-color);
-  
+
 }
 
 .body-font {
@@ -27,32 +27,32 @@ header {
   margin: 1rem auto;
   display: grid;
   grid-template-columns: 1fr auto;
-	align-items: end;
+  align-items: end;
   background-color: var(--accent-color-1);
 }
 
 .icon-img {
   float: left;
-	margin: auto 5px;
-	width: 64px;
-	height: auto;
+  margin: auto 5px;
+  width: 64px;
+  height: auto;
 }
 
 h1 {
   font-size: 2rem;
 }
 
-h2{
+h2 {
   text-align: center;
   font-size: 1.5rem;
 }
 
 .navigation {
-	display: flex;
-	flex-wrap: wrap;
-	list-style: none;
-	padding: 0;
-	color: var(--accent-color-2)
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  color: var(--accent-color-2)
 }
 
 nav ul {
@@ -60,7 +60,7 @@ nav ul {
 }
 
 .navigation li {
-	flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .navigation a {
@@ -93,17 +93,17 @@ nav ul {
   justify-items: center;
 }
 
-.hero{
-    position: relative;
-    top: 0;
-    left: 0;
+.hero {
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .hero-img {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: auto;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .comp-name {
@@ -117,7 +117,7 @@ nav ul {
 article {
   position: absolute;
   top: 500px;
-  background-color:var(--accent-color-2);
+  background-color: var(--accent-color-2);
   margin: 20px;
   padding: 10px;
   margin-right: 500px;
@@ -126,9 +126,9 @@ article {
   text-align: center;
 }
 
-.about-us{
-    margin: 1rem auto;
-    
+.about-us {
+  margin: 1rem auto;
+
 }
 
 .article-img {
@@ -150,6 +150,7 @@ article {
   border: 2px solid var(--primary-color);
 
 }
+
 footer {
   margin: 1rem auto;
   display: grid;
@@ -178,38 +179,146 @@ footer p {
   height: auto;
 }
 
-.headshots img{
+
+.welcome {
+  text-align: center;
+  background-color: var(--accent-color-2);
+  text-decoration: wavy;
+}
+
+.locations{
+  text-align: center;
+  background-color: var(--accent-color-2);
+}
+.headshots img {
   border: 1px solid var(--primary-color);
-  border-radius: 40%;
+  border-radius: 50%;
   width: 200px;
   height: auto;
 
 }
-.headshots{
+
+.headshots {
   justify-content: space-around;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
 }
 
-#map{
+#map {
   position: relative;
+  width: 50%;
+  height: auto;
   padding-bottom: 40%;
-  margin: 15rem;
-  border: #4B5B63 solid 1px;
+  margin: 1rem;
+  border: var(--primary-color) solid 1px;
   overflow: hidden;
 }
 
-#map iframe{
+#map iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;}
+  height: 100%;
+}
 
-  .map{
-    background-color: var(--accent-color-2);
-    text-align: left;
-    display: grid;
-   
-  }
+.map {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--accent-color-2);
+  text-align: left;
+}
+
+.address{
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  width: 600px;
+  height: 300px;
+ margin-top: 250px;
+}
+.headquarters{
+  border-bottom: var(--primary-color) 1px  solid;
+  padding-bottom: 10px;
+}
+form {
+  width: 800px;
+  margin: 0;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: solid 1px black;
+  background-color: hsl(18, 80%, 82%);
+  display: grid;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: auto auto;
+  gap: 10px;
+}
+.grid-container-radio{
+ grid-template-columns: 10px 10px;
+
+}
+
+input[type="radio"] {
+  vertical-align: text-top;
+  display: inline;
+}
+
+.textarea-container{
+  margin-top: 10px;
+}
+textarea{
+  width: 750px;
+}
+
+fieldset {
+  display: grid;
+  grid-gap: 0;
+  margin: 0;
+  padding: 0;
+  color: var(--primary-color);
+}
+
+legend {
+  padding: 1rem;
+  color: var(--primary-color);
+}
+
+label {
+  text-align: left;
+  padding-right: 10px;
+}
+
+input,
+select,
+textarea {
+  padding: .5rem;
+  font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+  vertical-align: middle;
+  width: 22px;
+  height: 22px;
+}
+
+
+
+button {
+  margin: .5rem;
+  background-color: hsl(182, 27%, 82%, 80%);
+  border: solid var(--primary-color);
+  border-radius: 1rem;
+  font: 1.1rem;
+}
+
+button:hover {
+  background-color: var(--primary-color);
+  color: var(--accent-color-1);
+}
