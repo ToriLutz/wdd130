@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Victoria Lutz">
+    <meta name="Description" content="A page to contact dry oar">
+    <meta name="viewport" content="width = distance-width">
+    <title>Dry Oar Rafting|Contact Us!</title>
+    <link rel="stylesheet" href="../wwr/styles/rafting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+IN:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- remove the ../wwr/ for ./ -->
+        <img class="icon-img" src="../wwr/images/icon-no-bg.png"
+            alt="A logo with a painted oar in water with the words Dry Oar">
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html"> About Us!</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <h1 class="head-font">Reach Our Team!</h1>
+        <p class="body-font">We always appreciate questions and feedback, here are a few ways you can reach us!</p>
+
+        <h1 class="head-font">Find Our Locations!</h1>
+        <!-- .map { display: flex; justify-content: space-evenly (or space-between or space-around whichever you like)} -->
+        <div class="map">
+            <!-- Wrap the address in a div add some padding and margin on this div. Formate it however looks good-->
+            <div>
+                <h2> Our Headquarters</h2>
+                <h3>Antimony,UT,USA</h3>
+                <p>120 N Main St, Antimony, UT 84712</p>
+                <p>contactus@company.com</p>
+                <p>1(800)123-4567</p>
+            </div>
+            <!-- Need to change the margin down to 1rem and set a width in the css for it to work right -->
+            <div id="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6277.571010735007!2d-111.99865446016169!3d38.121924258150784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874ae9ec0f61984b%3A0x454b23fee98672a8!2sAntimony%20Town!5e0!3m2!1sen!2sus!4v1738897869237!5m2!1sen!2sus"
+                    width="600" height="450" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <h1 class="head-font">Contact Us!</h1>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <!-- I would put both labels and inputs inside one div and remove all <br> Then use a class .grid-container { display: grid; grid-template-columns: 100px 1fr; grid-template-rows; auto (this might need to be auto auto); gap: 10px;} -->
+                 <!-- Would look like <div class="grid-container"><label><input><label><input></div> -->
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname">
+                <br>
+                <label for="email">Email Address</label>
+                <input type="email" id="useremail" name="useremail">
+                <br>
+            </fieldset>
+            <!-- delete all <br> below -->
+            <fieldset>
+                <p>What is the reason you're contacting us?</p>
+                <!-- I would do the same thing as above. new class .grid-container-radio with the\ grid-template-columns:25px 1fr; You'll have to play with the 25px to make sure it is wide enough for the radio button width. the same class will work. Get rid of the extra spaces and <br> elements -->
+                 <!-- <div class="grid-container-radio"><input><label><input><label><input><label></div> -->
+                <input type="radio" id="inquiry" name="reason" value="inquiry">
+                 <label for="inquiry">General Inquiry</label><br>
+                 <input type="radio" id="reservation" name="reason" value="reservation">
+                 <label for="reservation">Reservation Question</label><br>
+                 <input type="radio" id="suggestion" name="reason" value="suggestion">
+                 <label for="suggestion">Website Suggestions</label>
+                <br>
+                <!-- Put the label and textarea in its own div. make sure to put margin-top 10px to maintain the space -->
+                <label for="message">Send us a message!</label>
+                <textarea id="message" name="message" rows="5" placeholder="Enter your message here!"></textarea>
+                <br>
+                <!-- This label and input could use the same grid-container-radio if you move the input first -->
+                <label for="subscribe">Subscribe to our newsletter</label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+            </fieldset>
+            <button type="submit">Submit Form</button>
+        </form>
+
+        <h2 class="body-font">Reach Out To Management!</h2>
+        <div class="headshots">
+            <!-- all img/figcaption need to be in a <figure> elment, then make the img border-radius: 506. Resize the first img to ge the same size. -->
+            <img src="./images/guy 1.jpg" alt="a smiling man">
+            <figcaption>Ceo George Waters</figcaption>
+            <img src="./images/guy-2.jpg" alt="a smiling woman">
+            <figcaption> Chief Marketing Officer Kai Fontein</figcaption>
+            <img src="./images/guy-3.jpg" alt="a smiling man">
+            <figcaption> Chief Operating Officer Brooks Shimizu</figcaption>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Dry Oar Rafting | Victoria Lutz</p>
+        <nav class="sociallinks">
+            <a href="www.facebook.com"> <img src="../wwr/images/facebook.png" alt="facebook logo"></a>
+            <a href="www.reddit.com"><img src="../wwr/images/reddit.png" alt=" reddit logo"></a>
+            <a href="www.youtube.com"><img src="../wwr/images/youtube.png" alt="youtube logo"></a>
+        </nav>
+    </footer>
+</body>
+
+</html>
