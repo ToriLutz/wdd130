@@ -8,7 +8,6 @@
 
 .head-font {
   font-family: "Playwrite IN", serif;
-  font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
   color: var(--secondary-color);
@@ -17,7 +16,6 @@
 
 .body-font {
   font-family: "Nunito", serif;
-  font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
   color: var(--primary-color);
@@ -248,7 +246,6 @@ form {
   width: 800px;
   margin: 0 auto;
   padding: 1rem;
-  border-radius: 1rem;
   border: solid 1px black;
   background-color: hsl(18, 80%, 82%);
   display: grid;
@@ -305,8 +302,8 @@ textarea {
 
 input[type="checkbox"] {
   vertical-align: text-bottom;
-  width: 22px;
-  height: 22px;
+  width: 10px;
+  height: 10px;
 }
 
 button {
@@ -323,4 +320,8 @@ button:hover {
 }
 figcaption{
   text-align: center;
+  width: 200px;
+}
+.subscribe {
+  font-size: smaller;
 }
