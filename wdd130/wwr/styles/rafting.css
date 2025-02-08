@@ -188,7 +188,7 @@ footer p {
 
 .locations{
   text-align: center;
-  background-color: var(--accent-color-2);
+ border-bottom: 1px solid var(--primary-color);
 }
 .headshots img {
   border: 1px solid var(--primary-color);
