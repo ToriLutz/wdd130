@@ -246,12 +246,13 @@ footer p {
 }
 form {
   width: 800px;
-  margin: 0;
+  margin: 0 auto;
   padding: 1rem;
   border-radius: 1rem;
   border: solid 1px black;
   background-color: hsl(18, 80%, 82%);
   display: grid;
+  
 }
 
 .grid-container{
@@ -267,7 +268,7 @@ form {
 
 input[type="radio"] {
   vertical-align: text-top;
-  display: inline;
+
 }
 
 .textarea-container{
@@ -303,12 +304,10 @@ textarea {
 }
 
 input[type="checkbox"] {
-  vertical-align: middle;
+  vertical-align: text-bottom;
   width: 22px;
   height: 22px;
 }
-
-
 
 button {
   margin: .5rem;
@@ -321,4 +320,7 @@ button {
 button:hover {
   background-color: var(--primary-color);
   color: var(--accent-color-1);
+}
+figcaption{
+  text-align: center;
 }
